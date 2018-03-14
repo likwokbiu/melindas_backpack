@@ -2,15 +2,15 @@ class Backpack
   def initialize(attributes)
     @attributes = attributes # a hash containing day_of_week and weather keys
     @items = []
-    prepare
+    packing_list
   end
 
   def items
     @items
   end
 
-  def prepare
-    # set up local variables used by rest of prepare method
+  def packing_list
+    # set up local variables used by rest of packing_list method
     x = @attributes[:weather]
     day_of_week = @attributes[:day_of_week]
 
